@@ -1,1 +1,0 @@
-YOLOv5-based ROS2 object detection package used for the visual/semantic perception component of the proposed hybrid navigation system. Includes ROS2 configuration, launch files, detection results, and supporting package files.
