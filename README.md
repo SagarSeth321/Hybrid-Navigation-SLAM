@@ -1,38 +1,49 @@
 # Hybrid Navigation Algorithm Integrating DRL and YOLOv8 for Enhanced SLAM Performance in Mecanum-Wheeled Robot Systems
 
-This repository contains supplementary experimental videos and results associated with the research work on a hybrid autonomous navigation framework integrating Deep Reinforcement Learning (TD3), YOLOv8, and ORB-SLAM3 for enhanced SLAM performance and autonomous navigation of a mecanum-wheeled mobile robot.
+## About
 
-## Overview
+This repository contains the source code, supplementary experimental videos, and selected experimental results associated with the research work on a hybrid autonomous navigation framework integrating Deep Reinforcement Learning (TD3), YOLOv8, and ORB-SLAM3 for enhanced SLAM performance in mecanum-wheeled mobile robot systems.
 
-The proposed framework combines visual SLAM, semantic perception, and deep reinforcement learning to improve localization, mapping, path planning, and autonomous navigation performance in mobile robotic environments.
-
-The repository provides supplementary experimental videos and selected visualization results obtained from simulation and real-world experiments.
+The repository is provided as supplementary material for research evaluation and reproducibility.
 
 ## Repository Contents
 
-### Supplementary Videos
+### 1. Source Code
 
-The supplementary videos are available in the GitHub Release:
+The `code/slam/` directory contains the ROS 2 SLAM package used in the experimental framework.
+
+It includes:
+
+- SLAM configuration files
+- Launch files
+- RViz configurations
+- Mapping files
+- SLAM nodes
+- ROS 2 package configuration
+
+### 2. Supplementary Videos
+
+Supplementary experimental videos are available in the GitHub Release:
 
 **[Supplementary Videos – SLAM and Autonomous Navigation Results](../../releases/tag/v1.0)**
 
-The release contains:
+The release includes:
 
 - 2D LiDAR SLAM result
 - Proposed hybrid navigation result
 - Mobile robot SLAM demonstration
 
-### Experimental Results
+### 3. Experimental Results
 
 The `results/` directory contains selected experimental visualizations, including:
 
-- 2D LiDAR SLAM maps
-- ORB-SLAM3 mapping results
-- Visual SLAM results
-- Hybrid approach mapping results
-- Laboratory experimental views
+- 2D LiDAR SLAM
+- ORB-SLAM3 mapping
+- Visual SLAM
+- Hybrid approach mapping
+- Laboratory experimental results
 
-## Software Framework
+## Software
 
 The experimental framework uses:
 
@@ -46,9 +57,9 @@ The experimental framework uses:
 - OpenCV
 - Python
 
-## Robot Platform
+## Hardware
 
-Experiments were performed using a mecanum-wheeled mobile robot platform equipped with onboard perception and sensing systems for SLAM and autonomous navigation.
+The experimental evaluation was performed using a mecanum-wheeled mobile robot equipped with onboard sensing and perception systems for SLAM and autonomous navigation.
 
 ## Repository Structure
 
@@ -58,17 +69,22 @@ Hybrid-Navigation-SLAM/
 ├── README.md
 ├── LICENSE
 │
-├── videos/
-│   └── README.md
+├── code/
+│   └── slam/
+│       ├── config/
+│       ├── launch/
+│       ├── maps/
+│       ├── resource/
+│       ├── rviz/
+│       ├── slam/
+│       ├── test/
+│       ├── package.xml
+│       ├── setup.cfg
+│       └── setup.py
 │
 ├── results/
 │   ├── README.md
-│   ├── 2D-Lidar SLAM.jpg
-│   ├── LAB-View 1.jpg
-│   ├── LAB-View 2.jpg
-│   ├── Map by Hybrid Approach.jpg
-│   ├── ORB-SLAM3 Map.jpg
-│   └── Visual-SLAM Map.jpg
+│   └── Experimental Results
 │
-└── Releases/
-    └── v1.0
+└── videos/
+    └── README.md
