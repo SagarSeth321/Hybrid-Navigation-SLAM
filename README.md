@@ -66,25 +66,44 @@ The experimental evaluation was performed using a mecanum-wheeled mobile robot e
 ```text
 Hybrid-Navigation-SLAM/
 │
-├── README.md
-├── LICENSE
-│
 ├── code/
-│   └── slam/
-│       ├── config/
-│       ├── launch/
-│       ├── maps/
-│       ├── resource/
-│       ├── rviz/
-│       ├── slam/
-│       ├── test/
-│       ├── package.xml
-│       ├── setup.cfg
-│       └── setup.py
+│   ├── slam/
+│   │   ├── config/
+│   │   ├── launch/
+│   │   ├── maps/
+│   │   ├── resource/
+│   │   ├── rviz/
+│   │   ├── slam/
+│   │   ├── test/
+│   │   ├── package.xml
+│   │   ├── setup.cfg
+│   │   └── setup.py
+│   │
+│   ├── yolov5_ros2/
+│   │   ├── config/
+│   │   ├── launch/
+│   │   ├── resource/
+│   │   ├── results/
+│   │   ├── test/
+│   │   ├── yolov5_ros2/
+│   │   ├── package.xml
+│   │   ├── setup.cfg
+│   │   ├── setup.py
+│   │   └── README.md
+│   │
+│   └── README.md
 │
 ├── results/
 │   ├── README.md
-│   └── Experimental Results
+│   ├── 2D-Lidar SLAM.jpg
+│   ├── LAB-View 1.jpg
+│   ├── LAB-View 2.jpg
+│   ├── Map by Hybrid Approach.jpg
+│   ├── ORB-SLAM3 Map.jpg
+│   └── Visual-SLAM Map.jpg
 │
-└── videos/
-    └── README.md
+├── videos/
+│   └── README.md
+│
+├── README.md
+└── LICENSE
